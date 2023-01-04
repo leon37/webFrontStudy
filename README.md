@@ -1,2 +1,2 @@
 # webFrontStudy
- 前端学习
+ 前端学习笔记
