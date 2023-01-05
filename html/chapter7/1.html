@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+    <p>
+        用户名：<input type="text" name="username" placeholder="请输入用户名">
+        密码：<input type="password" name="pw">
+    </p>
+    邮箱： <input type="text" name="email">
+    <br>
+    性别：<input type="radio" name="gender" value="male">男
+    <input type="radio" name="gender" value="female">女
+    <br>
+    兴趣爱好：
+    <input type="checkbox" name="interest" value="game" checked>游戏
+    <input type="checkbox" name="interest" value="football" checked>足球
+    <input type="checkbox" name="interest" value="swimming">游泳
+    <input type="checkbox" name="interest" value="read">读书
+    <br>
+    年龄：
+    <input type="number" name="num" value="3" min="1" max="100">
+    出生日期：
+    <input type="datetime-local" name="date">
+    <br>
+    地区：
+    <select name="select">
+        <option value="北京">北京</option>
+        <option value="上海">上海</option>
+        <option value="广州">广州</option>
+        <option value="成都">成都</option>
+    </select>
+    <br>
+    留言：<br>
+    <textarea name="message" cols="80" rows="10"></textarea>
+    <br>
+    <input type="submit" name="submit" value="提交">
+    <input type="reset" name="clean" value="重置">
+</form>
+</body>
+</html>
