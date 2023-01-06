@@ -1,0 +1,9 @@
+p{
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+.ch{
+    vertical-align: super;
+    font-family: "宋体";
+    font-size: 12px;
+}
