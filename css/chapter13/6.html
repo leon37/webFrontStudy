@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            overflow: hidden;
+            white-space: nowrap;
+            width: 200px;
+            background: #fc9
+        }
+        .clip{
+            text-overflow: clip;
+        }
+        .ellipsis{
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<h2>text-overflow:clip</h2>
+<div class="clip">不显示省略标记，而是简单裁切掉</div>
+<h2>text-overflow:ellipsis</h2>
+<div class="ellipsis">当对象内文本溢出时显示省略标记</div>
+</body>
+</html>
