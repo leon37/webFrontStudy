@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style>
+        #canvas {
+            border: 1px solid grey;
+        }
+    </style>
+    <script>
+        function draw() {
+            var c = document.getElementById("canvas")
+            var ctx = c.getContext('2d')
+            var grd = ctx.createLinearGradient(0, 0, 230, 50)
+            grd.addColorStop(0, '#4fc2f0')
+            grd.addColorStop(.5, '#f89dc0')
+            grd.addColorStop(1, '#f74819')
+            ctx.fillStyle = grd
+            ctx.fillRect(0, 0, 230, 50)
+        }
+    </script>
+</head>
+<body onload="draw()">
+<canvas id="canvas" width="300" height="100">
+    Canvas not supported
+</canvas>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .header {
+            border-bottom: 2px solid #e8e8e8;
+            min-width: 900px;
+            font-family: "微软雅黑";
+        }
+
+        .logo {
+            height: 88px;
+            line-height: 88px;
+            margin-left: 80px;
+        }
+
+        .logo img {
+            height: 88px;
+        }
+
+        .nav {
+            height: 88px;
+            line-height: 88px;
+            margin-right: 60px;
+        }
+
+        .nav li {
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header clearfix">
+    <div class="logo fl">
+        <img src="" alt="">
+    </div>
+    <ul class="nav fr">
+        <li class="fl">品牌讯息</li>
+        <li class="fl">服务指南</li>
+        <li class="fl">商场信息</li>
+        <li class="fl">公司简介</li>
+        <li class="fl">招聘</li>
+    </ul>
+</div>
+</body>
+</html>

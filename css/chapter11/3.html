@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .left {
+            background-color: lightgrey;
+            border: 1px solid #66a0dc;
+            width: 300px;
+            height: 250px;
+            float: left;
+        }
+
+        .right {
+            background-color: peachpuff;
+            border: 1px solid #66a0dc;
+            height: 250px;
+            margin-left: 302px;
+        }
+    </style>
+</head>
+<body>
+<div class="clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

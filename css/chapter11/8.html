@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            background-color: #65647C;
+        }
+
+        .header {
+            width: 160px;
+            font: 20px bolder;
+            color: #ffffff;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .img {
+            width: 20px;
+            background-color: #EDEDED;
+            padding: 3px;
+        }
+
+        .input {
+            width: 140px;
+            height: 20px;
+            background-color: #EDEDED;
+            /*color: #EDEDED;*/
+            /*text-align: center;*/
+            line-height: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 20px;
+            padding: 10px;
+            background-color: #EDEDED;
+            display: flex;
+            margin-bottom: 1px;
+            z-index: 0;
+        }
+
+        .border_radius1 {
+            border-radius: 2px 2px 0 0;
+        }
+
+        .border_radius2 {
+            border-radius: 0 0 2px 2px;
+        }
+
+        .login {
+            width: 170px;
+            height: 30px;
+            color: #ffffff;
+            background-color: #38A3A5;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+            border-radius: 2px;
+            line-height: 30px;
+        }
+
+        .login:hover{
+            background-color: #6ebfb5;
+            cursor: pointer;
+        }
+
+        .outbox {
+            width: 170px;
+            height: 50%;
+            overflow: auto;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="outbox">
+    <div class="header">Let's get started.</div>
+    <form>
+        <div class="box border_radius1">
+            <img class="img" src="邮件.png" alt="">
+            <input class="input" type="email" placeholder="Email">
+        </div>
+        <div class="box border_radius2">
+            <img class="img" src="密码.png" alt="">
+            <input class="input" type="password" placeholder="Password">
+        </div>
+        <div class="login">
+            Login
+        </div>
+    </form>
+</div>
+</body>
+</html>
