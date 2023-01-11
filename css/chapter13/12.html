@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .fl{
+            float: left;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .box{
+            width: 600px;
+            height: 300px;
+            border: 3px solid grey;
+        }
+        .box div{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .son1{
+            width: 200px;
+            height: 300px;
+            border: 4px solid #8ac6d1;
+            padding: 30px;
+            background-color: #ffb6b9;
+        }
+        .son2{
+            width: 400px;
+            height: 300px;
+            border: 14px solid #bbded1;
+            padding: 50px;
+            background-color: #fae3d9;
+        }
+    </style>
+</head>
+<body>
+<div class="box clearfix">
+    <div class="son1 fl">子元素内容区的位置</div>
+    <div class="son2 fl">子元素内容区的位置</div>
+</div>
+</body>
+</html>

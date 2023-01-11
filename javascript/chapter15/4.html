@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function changeColor(x) {
+            x.style.backgroundColor = "pink"
+        }
+        function cancelColor(x) {
+            x.style.backgroundColor = "#66a0dc"
+        }
+
+    </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #66a0dc;
+        }
+    </style>
+</head>
+<body>
+<input type="text" placeholder="请填写姓名" onfocus="changeColor(this)" onblur="cancelColor(this)">
+<input type="text" placeholder="请填写性别" onfocus="changeColor(this)" onblur="cancelColor(this)">
+<div onmouseover="changeColor(this)" onmouseleave="cancelColor(this)">
+</div>
+</body>
+</html>

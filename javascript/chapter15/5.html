@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .blue{
+            color: #5c87cb;
+        }
+        #mark{
+            width: 200px;
+            border: 2px solid #f3c35d;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let ele1 = document.getElementById("mark")
+            console.log(ele1)
+            let ele2 = document.getElementsByClassName("blue")
+            console.log(ele2)
+            let ele3 = document.getElementsByTagName("h1")
+            console.log(ele3)
+        }
+    </script>
+</head>
+<body>
+<h1>这是一个h1元素</h1>
+<h2 class="blue">这是一个h2元素</h2>
+<h3 class="blue">这是一个h3元素</h3>
+<h4 id="mark">这是一个h4元素</h4>
+<h5>这是一个h5元素</h5>
+</body>
+</html>

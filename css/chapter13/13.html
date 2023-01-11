@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .fl {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .page {
+            padding: 200px;
+        }
+
+        .box1, .box2 {
+            width: 500px;
+            background-color: #ffffff;
+            box-shadow: 10px 10px 10px lightgrey;
+        }
+        .box1{
+            transform: rotate(5deg);
+        }
+        .box2{
+            transform: rotate(-10deg);
+        }
+        img {
+            width: 500px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="clearfix page">
+    <div class="fl box1">
+        <img src="bear.jpg" alt="">
+    </div>
+    <div class="fl box2">
+        <img src="wolf.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
