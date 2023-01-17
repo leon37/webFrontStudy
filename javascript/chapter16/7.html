@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    html,body{
+        height: 100%;
+    }
+    img{
+        width: 10px;
+        position: fixed;
+    }
+    </style>
+    <script>
+    function coordinates(event){
+        console.log(event.screenX)
+        console.log(event.screenY)
+        let x = event.screenX
+        let y = event.screenY
+        let lantern = document.getElementById("lantern")
+        lantern.style.left = x + "px"
+        lantern.style.top = y + "px"
+    }
+    </script>
+</head>
+<body onmousemove="coordinates(event)">
+<img id="lantern" src="../../image/lantern.png" alt="">
+</body>
+</html>

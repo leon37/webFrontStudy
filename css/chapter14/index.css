@@ -16,7 +16,7 @@ footer {
 .foot-item i {
     display: block;
     width: 0.51rem;
-    background: url("home.png") no-repeat center center/100%;
+    background: url("../../image/home.png") no-repeat center center/100%;
 }
 
 .foot-item:nth-of-type(1) i {
@@ -25,26 +25,26 @@ footer {
 
 .foot-item:nth-of-type(2) i {
     height: 0.44rem;
-    background-image: url("info.png");
+    background-image: url("../../image/info.png");
     background-size: 100%;
 }
 
 .foot-item:nth-of-type(3) i {
     height: 0.37rem;
-    background-image: url("search.png");
+    background-image: url("../../image/search.png");
     background-size: 100%;
 }
 
 .foot-item:nth-of-type(4) i {
     height: 0.44rem;
     width: 0.5rem;
-    background-image: url("bag.png");
+    background-image: url("../../image/bag.png");
     background-size: 100%;
 }
 
 .foot-item:nth-of-type(2) i {
     height: 0.5rem;
     width: 0.47rem;
-    background-image: url("user.png");
+    background-image: url("../../image/user.png");
     background-size: 100%;
 }

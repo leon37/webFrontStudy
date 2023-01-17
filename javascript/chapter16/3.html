@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function blink() {
+            let img = document.getElementById('blickImg')
+            img.style.visibility = (img.style.visibility == 'hidden') ? "visible" : "hidden"
+            setTimeout(blink, 500)
+        }
+        window.onload = blink
+    </script>
+</head>
+<body>
+<img id="blickImg" src="../../image/bear.jpg" width="200px">
+</body>
+</html>

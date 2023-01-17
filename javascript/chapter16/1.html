@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 500px;
+            text-align: center;
+            font: 18px/3 "微软雅黑";
+            background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+            color: #ffffff;
+            padding: 20px;
+        }
+        .box span{
+            font-family: "times new roman";
+            font-size: 40px;
+            padding-left: 30px;
+        }
+    </style>
+    <script>
+        function showtime(){
+            let nowTime = new Date()
+            let hours = nowTime.getHours()
+            let minutes = nowTime.getMinutes()
+            let seconds = nowTime.getSeconds()
+            let timer = hours
+            timer += ((minutes < 10) ? ":0" : ":") + minutes
+            timer += ((seconds < 10) ? ":0" : ":") + seconds
+            timer += " " + ((hours > 12) ? "PM" : "AM")
+            let box = document.getElementById("timer")
+            box.innerHTML = timer
+            setTimeout("showtime()", 1000)
+        }
+        window.onload = showtime
+    </script>
+</head>
+<body>
+<p class="box">当前时间<span id="timer"></span></p>
+</body>
+</html>

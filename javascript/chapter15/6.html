@@ -3,12 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <script>
+        function bigImg(x) {
+            x.style.width = "300px"
+        }
+
+        function normalImg(x) {
+            x.style.width = "200px"
+        }
+
+        function clickImg(x, clickImg) {
+            let src = x.getAttribute("src")
+            clickImg.setAttribute("src", src)
+        }
+    </script>
+    <style>
+        .fl {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .leftBox {
+            height: 100%;
+            width: 200px;
+            margin: 10px;
+            justify-content: space-around;
+        }
+
+        .rightBox {
+            height: 100%;
+            width: 800px;
+            margin: 10px;
+        }
+
+        img {
+            width: 200px;
+            transition: 0.3s;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="box">
+<div class="clearfix">
+    <div class="fl leftBox">
         <div class="innerBox">
-            <img src="../../image/t">
+            <img src="../../image/bear.jpg" onmousemove="bigImg(this)" onmouseleave="normalImg(this)"
+                 onclick="clickImg(this, '#clickImg')">
+        </div>
+        <div class="innerBox">
+            <img src="../../image/bear.jpg" onmousemove="bigImg(this)" onmouseleave="normalImg(this)">
+        </div>
+        <div class="innerBox">
+            <img src="../../image/bear.jpg" onmousemove="bigImg(this)" onmouseleave="normalImg(this)">
         </div>
     </div>
+    <div class="fl rightBox">
+        <img id="clickImg" src="../../image/wolf.jpg" alt="">
+    </div>
+</div>
 </body>
 </html>

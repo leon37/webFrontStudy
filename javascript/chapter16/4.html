@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function () {
+            let imgList = ['bear.jpg', 'wolf.jpg', 'deer.jpg']
+            let box = document.getElementById("imgEle")
+            let i = 0
+
+            function slide() {
+                box.setAttribute("src", "../../image/" + imgList[i])
+                i++
+                console.log(i)
+                if (i > 3) {
+                    i = 0
+                }
+            }
+            setInterval(slide, 1500)
+        }
+    </script>
+</head>
+<body>
+<img src="" alt="轮播" id="imgEle" width="300px">
+</body>
+</html>

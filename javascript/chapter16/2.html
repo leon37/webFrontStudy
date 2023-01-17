@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 500px;
+            text-align: center;
+            font: 18px/3 "微软雅黑";
+            background: linear-gradient(to top, #B2B2B2 0%, #222222 100%);
+            color: #ffffff;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function showTime() {
+            let timeDate = new Date("2023-02-22")
+            console.log(timeDate)
+            let now = new Date()
+            let totalTime = timeDate.getTime() - now.getTime()
+            totalTime = getInt(totalTime / 1000)
+            let days = getInt(totalTime / (60 * 60 * 24))
+            totalTime = getInt(totalTime % (60 * 60 * 24))
+            let hours = getInt(totalTime / (60 * 60))
+            totalTime = getInt(totalTime % (60 * 60))
+            let minutes = getInt(totalTime / 60)
+            totalTime = getInt(totalTime % 60)
+            let seconds = totalTime
+            let s = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds " + "before our wedding anniversary."
+            let ele = document.getElementById("countdown")
+            ele.innerHTML = s
+            setTimeout("showTime()", 1000)
+        }
+
+        function getInt(x) {
+            return Math.floor(x)
+        }
+
+        window.onload = showTime
+    </script>
+</head>
+<body>
+<p class="box"><span id="countdown"></span></p>
+</body>
+</html>

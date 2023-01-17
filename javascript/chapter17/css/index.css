@@ -1,0 +1,124 @@
+body {
+    background-color: #cbcfdc;
+}
+
+.page {
+    width: 1280px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    height: 90px;
+    /*background-color: #fac60e;*/
+    width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    /*background-color: #cad972;*/
+    height: 600px;
+}
+
+header .logo {
+    width: 50px;
+    /*height: 100%;*/
+    margin: 20px 0 0 20px;
+}
+
+#logo{
+    width: 50px;
+    /*height: 50px;*/
+}
+
+header nav {
+    height: 18px;
+    width: 400px;
+    margin-left: 30px;
+    /*background-color: dodgerblue;*/
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav span{
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+header .menu {
+    height: 18px;
+    /*background-color: #fac60e;*/
+    text-align: center;
+    padding: 36px 0;
+}
+
+header .menu li{
+    height: 18px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+header .menu li i{
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+header .menu li span {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+header .menu li:nth-of-type(1) i{
+    background-image: url(../img/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header .menu li:nth-of-type(2) i{
+    background-image: url(../img/bag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header .menu li:nth-of-type(3) i{
+    background-image: url(../img/user.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .show-img {
+    margin: 58px 0 0 20px;
+    width: 646px;
+    /*background-color: plum;*/
+}
+
+.page1 .introduce {
+    width: 260px;
+    height: 400px;
+    margin: 58px 0 0 200px;
+    /*background-color: plum;*/
+}
+#like{
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    background-image: url(../img/heart1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page1 .introduce .img {
+    height: 50px;
+    width: 260px;
+}
+
+.show-img1{
+    width: 100px;
+    margin-right: 20px;
+}
